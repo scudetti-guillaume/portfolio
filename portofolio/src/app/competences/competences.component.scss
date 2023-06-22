@@ -1,0 +1,196 @@
+@import "../../styles.scss";
+
+.C-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+
+}
+
+.C-main-title {
+    font-size: 2.5rem;
+    height: 2.5rem;
+    background-clip: text;
+    color: transparent;
+    background-image: $background-maybar;
+}
+
+.C-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.C-card {
+    display: flex;
+    flex-basis: 40%;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    min-width: 250px;
+    border: solid 2px;
+    border-radius: 10px;
+    margin: 2%;
+    padding-bottom: 1%;
+    background-color: #454e65;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.C-card-title {
+    font-weight: bold;
+    text-align: center;
+    background-clip: text;
+    color: transparent;
+    background-image: $background-maybar
+}
+
+.C-card-ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.C-card-ul-backend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    padding-bottom: 2%;
+}
+
+
+.C-card-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 70%;
+}
+
+.C-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+
+}
+
+.C-card-icon {
+    display: flex;
+}
+
+
+.C-card-span {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 50%;
+}
+
+.C-card-level {
+    display: flex;
+    width: 30%;
+    border: solid 1px #00cc00;
+    height: 10px;
+    background-color: #092571;
+
+}
+
+.C-card-level-master-40 {
+    width: 40%;
+    background-color: #00cc00;
+}
+
+.C-card-level-master-50 {
+    width: 50%;
+    background-color: #00cc00;
+}
+
+.C-card-level-master-60 {
+    width: 60%;
+    background-color: #00cc00;
+}
+
+.C-card-level-master-70 {
+    width: 70%;
+    background-color: #00cc00;
+}
+
+.C-card-level-master-80 {
+    width: 80%;
+    background-color: #00cc00;
+}
+
+.C-card-level-master-90 {
+    display: flex;
+    background-color: #00cc00;
+    width: 90%;
+
+}
+
+.C-card-level-master-100 {
+    width: 100%;
+    background-color: #00cc00;
+}
+
+.C-download-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.C-download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: $background-maybar;
+    color: #ebe5e5;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.C-download-link:hover {
+    background-color: #333;
+    color: #851717;
+}
+
+.C-download-button:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 964px) {
+    .C-card-li {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    .C-card-level {
+        width: 50%;
+    }
+
+    .C-card-span {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+
+}

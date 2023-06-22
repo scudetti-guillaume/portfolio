@@ -1,0 +1,49 @@
+@import "../../styles.scss";
+
+.A-section{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+text-align: center;
+font-family: -apple-system;
+font-size: large;
+margin-bottom: 2%;
+}
+
+.A-wrapper{
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    width: 70%;
+    padding: 1%;
+}
+
+a {
+    background-clip: text;
+    color: transparent;
+    background-image: $background-maybar;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+.A-H2{
+font-size: 2.5rem;
+background-clip: text;
+color: transparent;
+background-image:$background-maybar
+}
+
+p{
+font-size: 1.5rem;
+font-weight: 400;
+margin-bottom: 2%;
+
+
+}

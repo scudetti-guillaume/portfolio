@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nom-du-projet';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  constructor(private titleService: Title) { }
+
+  ngOnInit() {
+    this.titleService.setTitle('Portfolio');
+  }
+
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

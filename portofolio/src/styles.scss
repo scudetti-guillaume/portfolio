@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+$color-1: #2a1d52;
+$color-2: #6C77F4;
+$color-3: rgb(99, 164, 233);
+$color-4: #4FEDD2;
+$color-5: #36D0EA;
+$color-6: #0f1628;
+$white: #ddd;
+$black: #333;
+$background-maybar: linear-gradient(to top right, #febd01, #d87011, #951a14, );
+$background-maybar-p: linear-gradient(to right, #febd01, #d87011, #951a14, );
+$background-body : linear-gradient(to right, #17181b, #113e5e);
+$background-body-2 : linear-gradient(to right, #0b183d, #074673);
+$background-body-3 : linear-gradient(to right, #77f089, #0bd41f);
+$background-body-4 : linear-gradient(to right, #188128, #15045a, #de15bc);
+
+html { height: 100%; }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: $color-6;
+    color: $white;
+}

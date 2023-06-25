@@ -64,17 +64,44 @@
     font-weight: bold;
 }
 
-
-.P-card-back-logoGit{
-width: 30px;
-height: 30px;
+.P-card-back-techno{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 
 }
 
+.P-card-back-link-wrapper{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+width: 40%;
+}
+
+.P-card-back-linkGit{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 10%;
+}
+
+.P-card-back-linkSite{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.P-card-back-logoGit{
+display: flex;
+width: 30px;
+height: 30px;
+}
+
 .P-card-back-logoSite {
+display: flex;
     width: 30px;
     height: 30px;
-
 }
 
 .P-card-front,

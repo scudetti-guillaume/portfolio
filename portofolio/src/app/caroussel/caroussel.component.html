@@ -10,9 +10,15 @@
             <div class="P-card-back-text">
                 <h3 class="P-card-back-title">{{ project.title }}</h3>
                 <p class="P-card-back-description">{{ project.description }}</p>
+                <div class="P-card-back-techno">
+                    <p class="P-card-back-technoFront"><span>Front : {{ project.technoFront }}</span></p>
+                    <p class="P-card-back-technoBack"><span>Back : {{ project.technoBack }}</span></p>
+                </div>
                 <div class="P-card-back-link-wrapper">
-                <p class="P-card-back-linkGit"><img [src]="project.logoGit" alt="logo Git" class="P-card-back-logoGit">{{ project.lienGit }}</p>
-                <p class="P-card-back-linkSite"><img [src]="project.logoSite" alt="logo Site" class="P-card-back-logoSite">{{ project.lienSite }}</p>
+                   <a class="P-card-back-linkGit" [href]="project.lienGit" title="Lien vers Git"><img [src]="project.logoGit" alt="logo Git"
+                            class="P-card-back-logoGit"></a>
+                   <a class="P-card-back-linkSite" [href]="project.lienSite" title="Lien vers le site"><img [src]="project.logoSite"
+                            alt="logo Site" class="P-card-back-logoSite"></a>
                 </div>
             </div>
         </div>

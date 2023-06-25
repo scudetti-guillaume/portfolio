@@ -1,0 +1,20 @@
+<ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="P-carousel-wrapper"
+    (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+    (beforeChange)="beforeChange($event)">
+    <div ngxSlickItem class="P-card" *ngFor="let project of projects">
+        <div class="P-card-front">
+            <img [src]="project.image" alt="Projet" class="P-card-img">
+            <!-- <h3>{{ project.name }}</h3> -->
+        </div>
+        <div class="P-card-back">
+            <div class="P-card-back-text">
+                <h3 class="P-card-back-title">{{ project.title }}</h3>
+                <p class="P-card-back-description">{{ project.description }}</p>
+                <div class="P-card-back-link-wrapper">
+                <p class="P-card-back-linkGit"><img [src]="project.logoGit" alt="logo Git" class="P-card-back-logoGit">{{ project.lienGit }}</p>
+                <p class="P-card-back-linkSite"><img [src]="project.logoSite" alt="logo Site" class="P-card-back-logoSite">{{ project.lienSite }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ngx-slick-carousel>

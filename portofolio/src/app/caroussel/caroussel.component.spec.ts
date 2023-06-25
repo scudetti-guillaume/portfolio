@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CvComponent } from './cv.component';
+import { CarousselComponent } from './caroussel.component';
 
-describe('CvComponent', () => {
-  let component: CvComponent;
-  let fixture: ComponentFixture<CvComponent>;
+describe('CarousselComponent', () => {
+  let component: CarousselComponent;
+  let fixture: ComponentFixture<CarousselComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CvComponent]
+      declarations: [CarousselComponent]
     });
-    fixture = TestBed.createComponent(CvComponent);
+    fixture = TestBed.createComponent(CarousselComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

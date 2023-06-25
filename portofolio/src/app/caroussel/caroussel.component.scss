@@ -1,0 +1,145 @@
+@import "../../styles.scss";
+
+.P-carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.slick-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.P-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 455px;
+    height: 460px;
+    perspective: 1000px;
+    border-radius: 10px;
+}
+
+.P-card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.P-card-back-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.P-card-back-title {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    background-clip: text;
+    color: transparent;
+    background-image: $background-maybar;
+}
+
+.P-card-back-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    color: rgb(240, 212, 212);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+.P-card-back-logoGit{
+width: 30px;
+height: 30px;
+
+}
+
+.P-card-back-logoSite {
+    width: 30px;
+    height: 30px;
+
+}
+
+.P-card-front,
+.P-card-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    border-radius: 10px;
+    background: $color-1;
+}
+
+
+.P-card-back {
+    transform: rotateY(180deg);
+}
+
+.P-card:hover .P-card-front {
+    transform: rotateY(180deg);
+}
+
+.P-card:hover .P-card-back {
+    transform: rotateY(0deg);
+}
+
+.slick-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background: $color-6;
+
+}
+
+.P-card-back-link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.P-card-back-linkGit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.P-card-back-linkSite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev,
+.slick-next {
+    height: 45px;
+    width: 40px;
+    background: grey !important;
+    z-index: 100;
+}

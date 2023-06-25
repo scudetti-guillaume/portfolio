@@ -1,0 +1,34 @@
+@import "../../styles.scss";
+
+.P-section{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    margin: auto;
+
+}
+
+.P-title {
+text-align: center;
+    font-size: 2.5rem;
+        height: 3rem;
+        background-clip: text;
+        color: transparent;
+        background-image: $background-maybar;
+}
+
+.P-carroussel-main{
+display: flex;
+height: 50%;
+width: 100%;
+}
+
+.carrousel{
+display: flex;
+height: 100%;
+width: 100%;
+
+}

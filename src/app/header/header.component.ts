@@ -1,5 +1,6 @@
-import { Component, NgModule} from '@angular/core';
-import { HostListener } from '@angular/core';
+import { Component} from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-header',
@@ -8,9 +9,13 @@ import { HostListener } from '@angular/core';
 })
 
 export class HeaderComponent {
-  showMenu = false;
-
-  toggleMenu() {
-    this.showMenu = !this.showMenu;
+  constructor(private router: Router) { }
+  scrollToSection(sectionId: string) {
+    this.router.navigate([], { fragment: sectionId });
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
+  
 }

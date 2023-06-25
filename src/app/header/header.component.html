@@ -4,43 +4,10 @@
 <span class="logo">&#125;</span>
 </div>
 <nav class="H-nav" >
-  <a routerLink="/" fragment="accueil"><span class="H-span">Accueil</span><mat-icon class="H-icon">home</mat-icon></a>
-  <a routerLink="/competences" fragment="competences"><span class="H-span">Compétences</span><mat-icon class="H-icon">code<</mat-icon></a>
-  <a routerLink="/projets" fragment="projets"><span class="H-span">Projets</span><mat-icon class="H-icon">work</mat-icon></a>
-  <a routerLink="/contact" fragment="contact"><span class="H-span">Contact</span><mat-icon class="H-icon">mail</mat-icon></a>
+  <a class="H-nav-link"><span class="H-span">Accueil</span><mat-icon class="H-icon">home</mat-icon></a>
+  <a class="H-nav-link" (click)="scrollToSection('competences')"><span class="H-span">Compétences</span><mat-icon class="H-icon">code<</mat-icon></a>
+  <a class="H-nav-link" (click)="scrollToSection('projets')" ><span class="H-span">Projets</span><mat-icon class="H-icon">work</mat-icon></a>
+  <a class="H-nav-link" (click)="scrollToSection('footer')" ><span class="H-span">Contact</span><mat-icon class="H-icon">mail</mat-icon></a>
   </nav>
 </header>
 
-<!-- <header>
-<div class="H-logo"><span class="logo">&#123;</span>
-    <span class="logo">GS</span>
-    <span class="logo">&#125;</span>
-</div>
-    <nav class="H-nav">
-       <a href="#accueil">Accueil</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<div id="header">
-    <app-header></app-header>
-</div>
-
-<div id="accueil">
-    <app-accueil></app-accueil>
-</div>
-
-<div id="competences">
-    <app-competences></app-competences>
-</div>
-
-<div id="projets">
-    <app-projets></app-projets>
-</div>
-
-<div id="cv">
-    <app-cv></app-cv>
-</div> -->

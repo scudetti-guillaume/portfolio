@@ -1,5 +1,12 @@
 @import "../../styles.scss";
 
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -8,10 +15,7 @@ header {
     color: #f6ebeb;
     height: 30px;
     padding-right: 1%;
-
 }
-
-
 
 a {
     display: flex;
@@ -23,7 +27,6 @@ a {
     padding-right: 1%;
 }
 
-
 a:hover {
     display: flex;
     width: fit-content;
@@ -31,6 +34,7 @@ a:hover {
     text-decoration: none;
     background:$background-maybar;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .A-H1{

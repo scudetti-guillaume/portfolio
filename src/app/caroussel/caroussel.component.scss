@@ -170,3 +170,19 @@ display: flex;
     background: grey !important;
     z-index: 100;
 }
+
+@media (max-width: 988px) {
+.P-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 455px;
+        height: 460px;
+        perspective: 1000px;
+        border-radius: 10px;
+    }
+
+
+
+}

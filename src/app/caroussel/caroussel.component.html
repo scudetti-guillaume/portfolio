@@ -1,6 +1,7 @@
 <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="P-carousel-wrapper"
     (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-    (beforeChange)="beforeChange($event)">
+    (beforeChange)="beforeChange($event)" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
+  (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
     <div ngxSlickItem class="P-card" *ngFor="let project of projects">
         <div class="P-card-front">
             <img [src]="project.image" alt="Projet" class="P-card-img">

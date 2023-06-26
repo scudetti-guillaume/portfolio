@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { SlickCarouselComponent } from 'ngx-slick-carousel';
 
 @Component({
   selector: 'app-caroussel',
   templateUrl: './caroussel.component.html',
   styleUrls: ['./caroussel.component.scss']
 })
-export class CarousselComponent {
+export class CarousselComponent implements OnInit {
   projects: any[] = [
     { name: 'Mot de passe', image: '../../assets/logoprojets/motdepasse.png', logoGit: '../../assets/icones/github.png', lienGit: 'https://github.com/scudetti-guillaume/jeu_ahmedlndy_mot_de_passe', logoSite: '../../assets/icones/site-web.png', lienSite: '', title: 'Mot de passe', description: 'un jeu où a tour de role les joueurs en binome doivent deviner une liste de mot sous la direction du gamemaster', technoFront: 'React , socket.io ',technoBack: ' Express, JWT , MongoDB' },
     { name: 'Canva', image: '../../assets/logoprojets/canvainterface.png', logoGit: '../../assets/icones/github.png', lienGit: 'https://github.com/scudetti-guillaume/interface-canva', logoSite: '../../assets/icones/site-web.png', lienSite: '', title: 'Canva', description: 'Petit exercice avec canva de dessin et d\'animation ', technoFront: 'JS , HTML canva' ,technoBack: 'pas de backend' },
@@ -36,5 +37,26 @@ export class CarousselComponent {
     console.log('beforeChange');
   }
   constructor() { }
-  ngOnInit(): void { }
+
+  ngOnInit() {
+    this.checkWindowSize();
+    window.addEventListener('resize', () => {
+      this.checkWindowSize(); // Appel à chaque fois que la taille de la fenêtre change
+    });
+  }
+  
+  @HostListener('window:resize', ['$event'])
+  onWindowResize(event: any) {
+    this.checkWindowSize();
+    
+  }
+  private checkWindowSize() {
+  
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 986) {
+      this.slideConfig.slidesToShow = 1;
+    } else {
+      this.slideConfig.slidesToShow = 2;
+    }
+  }
 }

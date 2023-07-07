@@ -1,8 +1,6 @@
-<ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="P-carousel-wrapper"
-    (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
-    (beforeChange)="beforeChange($event)" (init)="slickInit($event)" (breakpoint)="breakpoint($event)"
-  (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
-    <div ngxSlickItem class="P-card" *ngFor="let project of projects">
+<ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="P-carousel-wrapper">
+    <div ngxSlickItem class="P-card" *ngFor="let project of projects, let i = index">
+    <div class="P-card-container" [class.flipped]="cardStates[i]" (click)="toggleCard(i)">
         <div class="P-card-front">
             <img [src]="project.image" alt="Projet" class="P-card-img">
             <!-- <h3>{{ project.name }}</h3> -->
@@ -21,6 +19,7 @@
                    <a class="P-card-back-linkSite" [href]="project.lienSite" title="Lien vers le site"><img [src]="project.logoSite"
                             alt="logo Site" class="P-card-back-logoSite"></a>
                 </div>
+            </div>
             </div>
         </div>
     </div>

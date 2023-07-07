@@ -31,4 +31,13 @@ width: 90vw;
 }
 
 
+@media (max-width: 762px) and (orientation: landscape) {
 
+    .accueil,
+    .competence,
+    .projets {
+        // flex-direction: row;
+        height: auto;
+        margin-top: 40px;
+    }
+}

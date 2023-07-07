@@ -12,15 +12,13 @@ flex-direction: column;
 .projets{
     display: flex;
     height: 100vh;
-    width: 100vw;
     margin-bottom: 20px;
 }
 
 .footer{
 display: flex;
 height: 10vh;
-width: 100vw;
-// background-color: #fff;
+width: 90vw;
 }
 
 @media (max-width: 762px) {

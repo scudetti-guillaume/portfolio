@@ -77,6 +77,7 @@ flex-direction: column;
 display: flex;
 align-items: center;
 justify-content: space-evenly;
+margin-top: 5%;
 width: 40%;
 }
 
@@ -95,18 +96,18 @@ justify-content: center;
 
 .P-card-back-logoGit{
 display: flex;
-width: 30px;
-height: 30px;
+width: 40px;
+height: 40px;
 }
 
 .P-card-back-logoSite {
 display: flex;
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
 }
 
 .P-card-container{
-cursor: pointer;
+cursor: grab;
 
 }
 
@@ -203,21 +204,18 @@ cursor: pointer;
         perspective: 1000px;
         border-radius: 10px;
     }
-.P-card-front {
-    transform: rotateY(0deg);
-}
+// .P-card-back {
+//     transform: rotateY(180deg);
+// }
 
-.P-card-back {
-    transform: rotateY(180deg);
-}
+// .P-card:hover .P-card-front {
+//     transform: rotateY(180deg);
+// }
 
-.P-card-container.flipped .P-card-front {
-    transform: rotateY(-180deg);
-}
+// .P-card:hover .P-card-back {
+//     transform: rotateY(0deg);
+// }
 
-.P-card-container.flipped .P-card-back {
-    transform: rotateY(0deg);
-}
 
 
 

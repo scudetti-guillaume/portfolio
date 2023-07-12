@@ -6,7 +6,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  constructor(private router: Router) { }
+mail:string ; 
+
+  constructor(private router: Router) { 
+    this.mail = 'scudetti.guillaume@proton.me';
+  }
   scrollToSection(sectionId: string) {
     this.router.navigate([], { fragment: sectionId });
     const element = document.getElementById(sectionId);

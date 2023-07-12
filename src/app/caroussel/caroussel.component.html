@@ -1,9 +1,10 @@
 <ngx-slick-carousel #slickModal="slick-carousel" [config]="slideConfig" class="P-carousel-wrapper">
-    <div ngxSlickItem class="P-card" *ngFor="let project of projects, let i = index">
-    <div class="P-card-container" [class.flipped]="cardStates[i]" (click)="toggleCard(i)">
+    <div  ngxSlickItem class="P-card" *ngFor="let project of projects; let i = index"
+       [class.flipped]="project.flipped"
+       (touchstart)="toggleCard(i)">
+  
         <div class="P-card-front">
             <img [src]="project.image" alt="Projet" class="P-card-img">
-            <!-- <h3>{{ project.name }}</h3> -->
         </div>
         <div class="P-card-back">
             <div class="P-card-back-text">
@@ -21,6 +22,5 @@
                 </div>
             </div>
             </div>
-        </div>
     </div>
 </ngx-slick-carousel>

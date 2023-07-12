@@ -47,7 +47,8 @@
 
 .P-card-back-title {
     text-align: center;
-    font-size: xx-large;
+    height:2rem;
+    font-size: 2rem;
     font-weight: bold;
     background-clip: text;
     color: transparent;
@@ -65,49 +66,49 @@
     font-weight: bold;
 }
 
-.P-card-back-techno{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+.P-card-back-techno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
-.P-card-back-link-wrapper{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-margin-top: 5%;
-width: 40%;
+.P-card-back-link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    width: 40%;
 }
 
-.P-card-back-linkGit{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-right: 10%;
+.P-card-back-linkGit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
 }
 
-.P-card-back-linkSite{
-display: flex;
-align-items: center;
-justify-content: center;
+.P-card-back-linkSite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.P-card-back-logoGit{
-display: flex;
-width: 40px;
-height: 40px;
+.P-card-back-logoGit {
+    display: flex;
+    width: 40px;
+    height: 40px;
 }
 
 .P-card-back-logoSite {
-display: flex;
+    display: flex;
     width: 55px;
     height: 55px;
 }
 
-.P-card-container{
-cursor: grab;
+.P-card-container {
+    cursor: grab;
 
 }
 
@@ -127,32 +128,24 @@ cursor: grab;
     background: $color-1;
 }
 
-// .P-card-back {
-//     transform: rotateY(180deg);
-// }
-
-// .P-card:hover .P-card-front {
-//     transform: rotateY(180deg);
-// }
-
-// .P-card:hover .P-card-back {
-//     transform: rotateY(0deg);
-// }
-
-.P-card-front {
-    transform: rotateY(0deg);
-}
-
 .P-card-back {
     transform: rotateY(180deg);
 }
 
-.P-card-container.flipped .P-card-front {
-    transform: rotateY(-180deg);
+.P-card:hover .P-card-front {
+    transform: rotateY(180deg);
 }
 
-.P-card-container.flipped .P-card-back {
+.P-card:hover .P-card-back {
     transform: rotateY(0deg);
+}
+
+.P-card.flipped .P-card-front {
+    transform: rotateY(0deg);
+}
+
+.P-card.flipped .P-card-back {
+    transform: rotateY(180deg);
 }
 
 .slick-slider {
@@ -193,8 +186,8 @@ cursor: grab;
     z-index: 100;
 }
 
-@media (max-width:  986px) {
-.P-card {
+@media (max-width: 986px) {
+    .P-card {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -204,19 +197,5 @@ cursor: grab;
         perspective: 1000px;
         border-radius: 10px;
     }
-// .P-card-back {
-//     transform: rotateY(180deg);
-// }
-
-// .P-card:hover .P-card-front {
-//     transform: rotateY(180deg);
-// }
-
-// .P-card:hover .P-card-back {
-//     transform: rotateY(0deg);
-// }
-
-
-
 
 }

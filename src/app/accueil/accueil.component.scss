@@ -9,6 +9,7 @@ text-align: center;
 font-family: -apple-system;
 font-size: large;
 margin-bottom: 2%;
+margin-top: 2%;
 }
 
 .A-wrapper{
@@ -34,10 +35,12 @@ a {
 
 
 .A-H2{
+height: 5rem;
 font-size: 2.5rem;
 background-clip: text;
-color: transparent;
-background-image:$background-maybar
+color: white;
+// color: transparent;
+// background-image:$background-maybar
 }
 
 p{
@@ -45,5 +48,21 @@ font-size: 1.5rem;
 font-weight: 400;
 margin-bottom: 2%;
 
+
+}
+
+@media (max-width: 625px) {
+.A-section {
+    margin-top: 4%;
+  }
+  
+  
+}
+
+@media (max-width: 380px) {
+.A-H2 {
+    height: 8rem;
+ 
+  }
 
 }

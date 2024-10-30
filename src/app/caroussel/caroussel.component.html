@@ -16,11 +16,16 @@
                     <p class="P-card-back-technoBack"><span>Back : {{ project.technoBack }}</span></p>
                 </div>
                 <div class="P-card-back-link-wrapper">
-                   <a class="P-card-back-linkGit" [href]="project.lienGit" title="Lien vers Git" target="_blank"><img [src]="project.logoGit" alt="logo Git"
-                            class="P-card-back-logoGit"></a>
-                   <a class="P-card-back-linkSite" [href]="project.lienSite" title="Lien vers le site" target="_blank"><img [src]="project.logoSite"
-                            alt="logo Site" class="P-card-back-logoSite"></a>
+                    <a class="P-card-back-linkGit" [href]="project.lienGit" title="Lien vers Git" target="_blank"
+                        (click)="$event.stopPropagation()" (touchstart)="$event.stopPropagation()">
+                        <img [src]="project.logoGit" alt="logo Git" class="P-card-back-logoGit">
+                    </a>
+                    <a class="P-card-back-linkSite" [href]="project.lienSite" title="Lien vers le site" target="_blank"
+                        (click)="$event.stopPropagation()" (touchstart)="$event.stopPropagation()">
+                        <img [src]="project.logoSite" alt="logo Site" class="P-card-back-logoSite">
+                    </a>
                 </div>
+
             </div>
             </div>
     </div>
